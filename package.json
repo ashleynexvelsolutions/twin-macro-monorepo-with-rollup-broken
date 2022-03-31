@@ -1,0 +1,57 @@
+{
+  "name": "nexvel-component-library-monorepo",
+  "version": "1.0.82",
+  "description": "Component library for Nexvel Solutions. Not to be distributed without permission.",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "lerna exec 'rollup -c'",
+    "bundle-size": "cat dist/main.js | gzip | wc -c",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook"
+  },
+  "author": "Ashley Pfeil",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ashleynexvelsolutions"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "babel-plugin-macros": "^3.1.0",
+    "lerna": "^4.0.0",
+    "postcss": "^8.4.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.70.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-visualizer": "^5.6.0",
+    "tailwindcss": "^3.0.23",
+    "twin.macro": "^2.8.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "hoist-non-react-statics": "^3.3.2"
+  }
+}

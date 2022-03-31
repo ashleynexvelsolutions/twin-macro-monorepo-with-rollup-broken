@@ -1,0 +1,11 @@
+{
+  "version": "independent",
+  "useWorkspaces": true,
+  "registry": "https://npm.pkg.github.com",
+  "command": {
+    "publish": {
+      "conventialCommits": true,
+      "message": "chore(release): Publish"
+    }
+  }
+}

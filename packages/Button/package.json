@@ -1,0 +1,19 @@
+{
+  "name": "@ashleynexvelsolutions/button",
+  "author": "Ashley Pfeil",
+  "version": "1.0.48",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "repository": "https://github.com/ashleynexvelsolutions/nexvel-component-library-monorepo",
+  "publishConfig": {
+    "@ashleynexvelsolutions:registry": "https://npm.pkg.github.com/ashleynexvelsolutions"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "gitHead": "cc90afff8ab622e2c59c39d18bfb4d5380600e56"
+}
